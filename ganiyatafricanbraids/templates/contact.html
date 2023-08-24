@@ -1,0 +1,75 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <link rel="stylesheet" href="index.js">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <title>Ganiyat African Braids</title>
+
+ 
+</head>
+<body id="contact">
+    
+  <nav>
+    <input type="checkbox" id="check">
+    <label id="checkbtn"  for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <label id="logo"><a style="text-decoration: none;" href="">Ganiyat African Braids</a></label>
+    <ul>
+      <li><a class="active" href="#">Home</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+<div class="elfsight-app-7ba97bf9-8397-44f0-9b0d-4f7c2ae33689"></div>
+
+<h1 id="contact-h1">CONTACT US</h1>
+<h4 id="contact-h4" style="text-align:center">We'd love to hear from you!</h4>
+
+<div class="container">
+	<div class="row">
+			<h1 id="contact-h1">contact us</h1>
+	</div>
+	<div class="row">
+			<h4 id="contact-h4" style="text-align:center">We'd love to hear from you!</h4>
+	</div>
+<form  action="{% url 'booking:contact' %}" method="POST" id="contactForm"> {% csrf_token %}
+	<div class="row input-container">
+			<div class="col-xs-12">
+				<div class="styled-input wide">
+					<input id="id_name" type="text" required />
+					<label id="contactl">Name</label> 
+				</div>
+			</div>
+			<div class="col-md-6 col-sm-12">
+				<div class="styled-input">
+					<input  id="id_email" type="text" required />
+					<label id="contactl">Email</label> 
+				</div>
+			</div>
+			<div class="col-md-6 col-sm-12">
+				<div class="styled-input" style="float:right;">
+					<input  id="id_subject" type="text" required />
+					<label id="contactl">Subject</label> 
+				</div>
+			</div>
+			<div class="col-xs-12">
+				<div class="styled-input wide">
+					<textarea  id="id_message" required></textarea>
+					<label id="contactl">Message</label>
+				</div>
+			</div>
+			<div class="col-xs-12">
+				<button type="submit" class="btn-lrg submit-btn">Send Message</button>
+			</div>
+	</div>
+</form>
+</div>

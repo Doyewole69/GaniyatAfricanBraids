@@ -31,7 +31,7 @@ def contact(request):
 
         obj = Complain.objects.create(name=name,email=email,subject=subject,message=message)
         messages.info(request,"Thanks for reaching out.We will get in touch soon!!!")
-        return redirect('contact')
+        return redirect('booking/contact')
     return render(request,'contact.html')
 
 
@@ -49,6 +49,7 @@ def appointment(request):
         note = request.POST.get('note')
 
         obj = Appointment.objects.create(name=name,email=email,service=service,contact=contact,date=date,time=time,note=note)
+        appointment.save
 
         return redirect('home')
     return redirect('home')
@@ -71,7 +72,6 @@ def success(request):
         'email':email,
         'name':name,
         'service':service,
-        'stylist':stylist,
         'date':date,
         'time':time,
         'order_id':order_id,

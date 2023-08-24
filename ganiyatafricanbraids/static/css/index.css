@@ -14,6 +14,11 @@ body{
   body{
     font-family: poppins;
   }
+  a#logoa{
+    font-size: 25px;
+    text-decoration: none;
+
+  }
   nav{
     background: #fff5f5;
     height: 80px;
@@ -324,7 +329,7 @@ body{
     position: relative;
     top: 1em;
   }
-  span{
+  p#copyright{
     color: white;
     text-align: center;
     position: relative;
@@ -472,6 +477,10 @@ font-style: normal;
 @media (max-width: 952px){
 div#flexbox1{
   padding: 1em;
+  margin: auto;
+}
+p#fb1p{
+  margin: auto;
 }
 div#flexbox2{
   flex-direction: column;
@@ -500,7 +509,94 @@ div#fb3images{
 #subh2{
   font-size: 25px;
 }
+p#copyright{
+  left: 10em;
+  color: white;
+}
 }
 @media (max-width: 858px){
+body{
+  overflow-x: hidden;
+}
+a#logoa{
+  font-size: 16px;
+}
+h1#fb1h1 {
+  font-size: 1.5em;
+}
+div#flexbox1{
+  flex-direction: column;
+  justify-content: space-between;
+  height: 43em;
+}
+div#fb1{
+  left: 1em;
+}
+div#fb11{
+  left: 5em;
+}
+div#flexbox2 {
+  flex-direction: column-reverse;
+  justify-content: center;
+  padding-top: 8em;
+}
+p#fb22p {
+  text-align: left;
+  width: 23em;
+  position: relative;
+  right: 2em;
+}
+h1#fb22h1 {
+  text-align: center;
+  position: relative;
+  font-size: 1.5em;
+  right: 1em;
+}
+img#fb2img {
+  width: 20em;
+}
+div#fb2 {
+  left: -1em;
+  padding-bottom: 5em;
+}   
+h1#fb3h1 {
+  font-size: 1.5em;
+}
+p#fb3p {
+  left: 3em;
+  width: 23em;
+}
+#subh2 {
+  font-size: 13px;
+}
+#subp {
+  color: white;
+  width: 20em;
+  word-wrap: break-word;
+}
+#footer-flex {
 
+  flex-direction: column;
+
+}
+p#footer-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: relative;
+  top: 1em;
+}
+p#address {
+  color: white;
+  position: relative;
+  top: 1em;
+  width: 17em;
+  text-align: center;
+  margin: auto;
+}
+a#IG-logo-footer{
+  margin: auto;
+  top: 2em;
+  position: relative;
+}
 }

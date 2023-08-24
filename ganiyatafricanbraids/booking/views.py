@@ -34,6 +34,9 @@ def contact(request):
         return redirect('booking/contact')
     return render(request,'contact.html')
 
+def thankyou(request):
+    return render(request,'Thankyou.html' )
+
 
 def services(request):
     return render(request,'service.html')

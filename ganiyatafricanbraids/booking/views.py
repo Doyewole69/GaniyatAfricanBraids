@@ -41,6 +41,9 @@ def thankyou(request):
 def services(request):
     return render(request,'service.html')
 
+def extrasmallknotless(request):
+    return render(request,'extrasmallknotless.html')
+
 def appointment(request):
     if request.method=='POST':
         name = request.POST.get('name')

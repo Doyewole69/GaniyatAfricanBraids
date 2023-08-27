@@ -18,16 +18,30 @@
     <label id="checkbtn"  for="check" class="checkbtn">
       <i class="fas fa-bars"></i>
     </label>
-    <label id="logo"><a id="logoa"  href="">Ganiyat African Braids</a></label>
+
+  <label id="logo"><a id="logoa"  href="">Ganiyat African Braids</a></label>
+   
     <ul>
-      <li><a  id="call" href="tel://+13477498082"><img src={% static "images/icons8-call-48.png" %}></img></a></li>
-      <li><a  id="email" href="mailto://doyewole69@yahoo.com"><img src={% static "images/icons8-send-email-48.png" %}></a></li>
-      <li><a href="https://www.instagram.com/ganiyathairstylistt/"><img src={% static "images/icons8-instagram-48.png" %}></img></a></li>
+      <li><a  href="{% url "home" %}">Home</a></li>
+      <li><a  href="{% url "booking:service" %}">Services</a></li>
+      <li><a href="">About Us</a></li>
+      <li><a href="">Policy</a></li>
     </ul>
   </nav>
 
-  <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
-<div class="elfsight-app-7ba97bf9-8397-44f0-9b0d-4f7c2ae33689"></div>
+  <!-- Smartsupp Live Chat script -->
+<script type="text/javascript">
+  var _smartsupp = _smartsupp || {};
+  _smartsupp.key = '690298011b9af364bbfd6b6c9585cf6c47745171';
+  window.smartsupp||(function(d) {
+    var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
+    s=d.getElementsByTagName('script')[0];c=d.createElement('script');
+    c.type='text/javascript';c.charset='utf-8';c.async=true;
+    c.src='https://www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
+  })(document);
+  </script>
+  <noscript> Powered by <a href=“https://www.smartsupp.com” target=“_blank”>Smartsupp</a></noscript>
+  
 
 
 
@@ -54,7 +68,7 @@
       <br>
 
    <form action="" >   
-    <script id="setmore_script" type="text/javascript" src="https://storage.googleapis.com/fullintegration-live/webComponentAppListing/Container/setmoreIframeLive.js"></script><a style="float:none; " id="Setmore_button_iframe"  href="https://booking.setmore.com/scheduleappointment/3c4abe86-34f3-4393-ba04-498a77981ddb"><img border="none" src="https://storage.googleapis.com/full-assets/setmore/images/1.0/Settings/book-now-blue.svg" alt="Book an appointment with Ganiyat AFrican Braids "/></a>
+    <script id="setmore_script" type="text/javascript" src="https://storage.googleapis.com/fullintegration-live/webComponentAppListing/Container/setmoreIframeLive.js"></script><a style="float:none; " id="Setmore_button_iframe"  href="https://booking.setmore.com/scheduleappointment/3c4abe86-34f3-4393-ba04-498a77981ddb"><img border="none" src="https://storage.googleapis.com/full-assets/setmore/images/1.0/Settings/book-now-blue.svg" alt="Book an appointment with Ganiyat AFrican Braids using Setmore"/></a>
    </form>
     </div>
 
@@ -149,16 +163,66 @@
 
     <div id="fb3images">
 
+      <div>
       <img class="img1" src={% static "images/Yarn-Braids.webp" %} alt="" title="Yarn Braids">
+      <br>
+      <h4 style= "text-align:center;",>Yarn Braids</h4>
+
+      </div>
+
+      <div>
       <img class="img2" src={% static "images/Mohawk-Braids.webp"%} alt="" title="Mohawk Braids">
+      <br>
+      <h4 style= "text-align:center;",>Mohawk Braids</h4>
+      </div>
+
+      <div>
       <img class="img3" src={% static "images/Micro-Braids.webp" %} alt="" title="Micro Braids">
+      <br>
+      <h4 style= "text-align:center;",>Micro Braids</h4>
+      </div>
+
+      <div>
       <img class="img4" src={% static "images/Snake-Braids.webp" %} alt="" title="Snake Braids">
+      <br>
+      <h4 style= "text-align:center;",>Snake Braids</h4>
+      </div>
+
+      <div>
       <img class="img5" src={% static "images/ghana-braids.webp"%} alt="" title="Ghana Braids">
+      <br>
+      <h4 style= "text-align:center;",>Ghana Braids</h4>
+      </div>
+
+      <div>
       <img class="img6" src={% static "images/Senegalese-Twists-.webp" %} alt="" title="Senegalese Twists">
+      <br>
+      <h4 style= "text-align:center;",>Senegalese Twist</h4>
+      </div>
+
+      <div>
       <img class="img7" src={% static "images/Fishbone-Braids.webp"%} alt="" title="Fish Bone Braids">
+      <br>
+      <h4 style= "text-align:center;",>Fish-Bone Braids</h4>
+      </div>
+
+      <div>
       <img class="img8" src={% static "images/spring-twist.jpg"%} alt="" title="Spring Twist">
+      <br>
+      <h4 style= "text-align:center;",>Spring Twist</h4>
+      </div>
+
+      <div>
       <img class="img9" src={% static "images/Kinky-Twists.webp"%} alt="" title="Kinky Twist">
+      <br>
+      <h4 style= "text-align:center;",>Kinky Twist</h4>
+      </div>
+
+      <div>
       <img class="img10" src={% static "images/twist.jpg"%} alt="" title="Twist">
+      <br>
+      <h4 style= "text-align:center;",>Twist</h4>
+      </div>
 
     </div>
 

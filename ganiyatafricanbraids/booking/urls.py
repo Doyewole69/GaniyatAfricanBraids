@@ -9,8 +9,10 @@ urlpatterns = [
     path('book/', views.book, name='book'),
     path('contact/',views.contact , name='contact'),
     path('success/',views.success , name='success'),
-    path('contact/',views.services , name='contact'),
+    path('service/',views.services , name='service'),
     path('thankyou/',views.thankyou , name='thankyou'),
+     path('extrasmallknotless/',views.extrasmallknotless , name='extrasmallknotless'),
+    
     
     
 

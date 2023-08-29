@@ -10,8 +10,8 @@ urlpatterns = [
     path('contact/',views.contact , name='contact'),
     path('success/',views.success , name='success'),
     path('service/',views.services , name='service'),
-    path('thankyou/',views.thankyou , name='thankyou'),
-     path('extrasmallknotless/',views.extrasmallknotless , name='extrasmallknotless'),
+    path('policy/',views.policy , name='policy'),
+     path('aboutus/',views.aboutus , name='aboutus'),
     
     
     

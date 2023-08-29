@@ -1,0 +1,266 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <link rel="stylesheet" href="index.js">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <title>Ganiyat African Braids</title>
+</head>
+<body>
+    
+  <nav>
+    <input type="checkbox" id="check">
+    <label id="checkbtn"  for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+
+  <label id="logo"><a id="logoa"  href="">Ganiyat African Braids</a></label>
+   
+    <ul>
+      <li><a  href="{% url "home" %}">Home</a></li>
+      <li><a  href="{% url "booking:service" %}">Services</a></li>
+      <li><a href="{% url "booking:aboutus" %}">About Us</a></li>
+      <li><a href="{% url "booking:policy" %}">Policy</a></li>
+      <li><a  id="call" href="tel://+13477498082"><img src={% static "images/icons8-call-48.png" %}></img></a></li>
+      <li><a  id="email" href="mailto://doyewole69@yahoo.com"><img src={% static "images/icons8-send-email-48.png" %}></a></li>
+      <li><a href="https://www.instagram.com/ganiyathairstylistt/"><img src={% static "images/icons8-instagram-48.png" %}></img></a></li>
+    </ul>
+  </nav>
+
+  <!-- Smartsupp Live Chat script -->
+<script type="text/javascript">
+  var _smartsupp = _smartsupp || {};
+  _smartsupp.key = '690298011b9af364bbfd6b6c9585cf6c47745171';
+  window.smartsupp||(function(d) {
+    var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
+    s=d.getElementsByTagName('script')[0];c=d.createElement('script');
+    c.type='text/javascript';c.charset='utf-8';c.async=true;
+    c.src='https://www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
+  })(document);
+  </script>
+  <noscript> Powered by <a href=“https://www.smartsupp.com” target=“_blank”>Smartsupp</a></noscript>
+  
+
+  <h1 style= "text-align: center; font-weight: 800; padding: 1em; ">
+
+    Terms of Services/FAQ
+
+  </h1>
+
+
+  <section id="accordion">
+
+    <div id="faq">
+    <button class="accordion">1). Is A Deposit required ?</button>
+    <div class="panel">
+      <p>Yes a deposit is required , a $50 dollars is required and it is non refundable</p>
+    </div>
+    </div>
+    
+    <div id="faq">
+    <button class="accordion">2). What payment methods are accepted?</button>
+    <div class="panel">
+      <p>For now, we only accept Zelle payments</p>
+    </div>
+    </div>
+    
+    <div id="faq">
+    <button class="accordion">3). What if I need to reschedule?</button>
+    <div class="panel">
+      <p>Please send an email to your braid professional for rescheduling. Please be aware that you have 1 to 4 days to reschedule after you original appointment date.</p>
+    </div>
+    </div>
+    
+    <div id="faq">
+    <button class="accordion">4). Do you work with all types of hair?</button>
+    <div class="panel">
+      <p>Yes , if you have any type of hair concerns like alopecia , thin hair , or thick please note that you will be charged extra. Also if you have any concerns with any of these hair conditions be sure to book a consultation first.</p>
+    </div>
+    </div>
+    
+    <div id="faq">
+    <button class="accordion">5). Do you work with colored hair ?</button>
+    <div class="panel">
+      <p>Yes we work with colored hair</p>
+    </div>
+    </div>
+    
+    <div id="faq">
+    <button class="accordion">6). Can I bring my kids or others?</button>
+    <div class="panel">
+      <p>No, there are no children allowed. No additional people to your appointment.</p>
+    </div>
+    </div>
+    
+    <div id="faq">
+    <button class="accordion">7). What happens if i’m late to my appointment?</button>
+    <div class="panel">
+      <p>If you are running late please contact your braider in advance. Late fees maybe charged to your service depending on how late you are.</p>
+    </div>
+    </div>
+    
+    <div id="faq">
+    <button class="accordion">8). How long does services take ?</button>
+    <div class="panel">
+      <p>Please review the type of service and read service description. We ask that you plan your day accordantly to get the treatment required for your appointment.</p>
+    </div>
+    </div>
+    
+    <div id="faq">
+    <button class="accordion">9). Is There a specific hair length needed ? </button>
+    <div class="panel">
+      <p>Yes , hair must be at least 4 inches  or longer</p>
+    </div>
+    </div>
+    
+    <div id="faq">
+    <button class="accordion">10). How should I come to my appointment?</button>
+    <div class="panel">
+      <p>Well rested, AirPods or headphones for calls and entertainment, positive vibes, well dressed (bright colors) and picture ready!</p>
+    </div>
+    </div>
+    
+    <div id="faq">
+    <button class="accordion">11). Please keep in mind that additional charges may apply if</button>
+    <div class="panel">
+      <p>-Hair isn’t properly blown out $25<br>
+
+        -Thick hair $20<br>
+        
+        -Alopecia $30 and up (according to consultation)<br>
+        
+        (Keep in mind these fees may vary depending on the service provider).</p>
+    </div>
+    </div>
+    
+    <div id="faq">
+    <button class="accordion">12). How can I contact Ganiyat African Braids?</button>
+    <div class="panel">
+      <p style= "box-sizing: content-box;">Our informations are:<br>
+        - +13477498082<br>
+        - booking@ganiyatafricanbraids.com<br>
+        - 941 Bergan street Newark New Jersey 07112<br>
+      </p>
+      <br><br><br><br><br><br>
+    </div>
+    </div>
+    
+    
+    <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        } 
+      });
+    }
+    </script>
+    
+    
+    </section>
+    
+    
+    <br><br><br><br><br>    <br><br><br><br><br>
+
+
+    <section  id="subscribe">
+
+        <h2 id="subh2">
+    
+            Join The lovers and Supporters of Ganiyat AFrican Braids
+    
+        </h2>
+    
+        <p id="subp">
+    
+            Join over 1000 customers and enjoy exclusive benefits
+            from emails and be the first to get important and 
+            firsthand informations about promos.
+    
+        </p>
+    
+        <form class="input-group" action = "" method = "post">
+            {% csrf_token %}
+            <input type="email" class="input" id="id_email" name="email" placeholder="uiverse@verse.io" autocomplete="off" maxlength="255" required="">
+            <input class="button--submit" value="Submit" type="submit">
+        </form>
+    
+        
+    
+    </section>
+    <br><br><br>
+       
+    <footer>
+    
+    
+      <div id="footer-flex">
+    
+        <p id="address"><img src={% static "images/icons8-address-48.png" %}>:941 Bergan street Newark New Jersey 07112</p>
+    
+        <div id="Quick" style= "margin: auto;">
+    
+        <h3 style= "background-color: #3d243c; color: white; font-weight: 800; width: 7em;
+        border: 1px solid black;
+        margin: auto;">Quick Links</h3>
+        
+        <a id="footer-book" target="_blank" href="https://ganiyatafricanbraids.setmore.com?source=easyshare">Book</a><br>
+    
+        <a id="footer-book" href="{% url "booking:service" %}">Services</a><br>
+    
+        <a id="footer-book" href="{% url "booking:aboutus" %}">About Us</a><br>
+    
+        <a id="footer-book" href="{% url "booking:policy" %}">Policy</a><br>
+    
+        </div>
+    
+    
+        <div id="sorted" style= "margin: auto;">
+    
+          <h3 style= "background-color: #3d243c; color: white; font-weight: 800; width: 7em;
+          border: 1px solid black;
+          margin: auto;">Most Sorted</h3>
+          
+          <a id="footer-book" target="_blank" href="https://booking.setmore.com/scheduleappointment/3c4abe86-34f3-4393-ba04-498a77981ddb/services/cd5677ce-9f72-4d57-b985-db54bd155ed8?source=easyshare">Knotless</a><br>
+      
+          <a id="footer-book" target="_blank" href="https://booking.setmore.com/scheduleappointment/3c4abe86-34f3-4393-ba04-498a77981ddb/services/3c31b326-dcfa-45da-9ffa-cd0c4ee857e1?source=easyshare">Twist</a><br>
+      
+          <a id="footer-book" target="_blank" href="https://booking.setmore.com/scheduleappointment/3c4abe86-34f3-4393-ba04-498a77981ddb/services/623039c0-fe40-44b7-9591-da1dd140c9ac?source=easyshare">Cornrows</a><br>
+      
+          <a id="footer-book" target="_blank" href="https://booking.setmore.com/scheduleappointment/3c4abe86-34f3-4393-ba04-498a77981ddb/services/8a3a8e0e-900e-4afa-8519-a5575fd6197a?source=easyshare">Ex-small Knotless</a><br>
+    
+          <a id="footer-book" target="_blank" href="https://booking.setmore.com/scheduleappointment/3c4abe86-34f3-4393-ba04-498a77981ddb/services/d5029feb-b23e-4f9b-bb4d-5fbb56246ade?source=easyshare">Goddess Braids</a><br>
+      
+          </div>
+    
+        <a id="IG-logo-footer" target="_blank" href="https://www.instagram.com/ganiyathairstylistt/"><img id="instagram" src="{% static 'images/icons8-instagram-96(1).png' %}" alt=""></a>
+    
+          
+    
+      </div>
+    
+    
+    
+      <p id="Copyright">
+        © Copyright 2023  - All rights reserved by Ganiyat African Braids 
+        </p>
+    
+      <br><br><br>
+    
+    </footer>
+    
+    
+    
+    </body>

@@ -9,6 +9,7 @@
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <title>Ganiyat African Braids</title>
 </head>
 <body>
@@ -19,13 +20,16 @@
       <i class="fas fa-bars"></i>
     </label>
 
-  <label id="logo"><a id="logoa"  href="">Ganiyat African Braids</a></label>
+  <label id="logo"><a id="logoa"  href="{% url "home" %}">Ganiyat African Braids</a></label>
    
     <ul>
       <li><a  href="{% url "home" %}">Home</a></li>
       <li><a  href="{% url "booking:service" %}">Services</a></li>
-      <li><a href="">About Us</a></li>
-      <li><a href="">Policy</a></li>
+      <li><a href="{% url "booking:aboutus" %}">About Us</a></li>
+      <li><a href="{% url "booking:policy" %}">Policy</a></li>
+      <li><a  id="call" href="tel://+13477498082"><img src={% static "images/icons8-call-48.png" %}></img></a></li>
+      <li><a  id="email" href="mailto://doyewole69@yahoo.com"><img src={% static "images/icons8-send-email-48.png" %}></a></li>
+      <li><a href="https://www.instagram.com/ganiyathairstylistt/"><img src={% static "images/icons8-instagram-48.png" %}></img></a></li>
     </ul>
   </nav>
 
@@ -228,6 +232,89 @@
 
   </div>
 
+
+  <div id= "experties">
+
+    <div style="padding: 1em;">
+    <h1 style="font-weight: 800; border: 5px solid white;
+    width: 2em;
+    text-align: center;">1</h1>
+    <h2 style="font-weight: 800;">Beauty Expertise</h2>
+    <p style="width:20em; font-weight: 700;">
+
+      Ganiyat African Braids stylist are highly trained and professional with witty hand to give you finest of style, They are surely great at thier craft
+
+    </p>
+    </div>
+
+
+    <div style="padding: 1em;">
+      <h1 style="font-weight: 800; border: 5px solid white;
+      width: 2em;
+      text-align: center;">2</h1>
+      <h2 style="font-weight: 800;">Location</h2>
+      <p style="width:20em; font-weight: 700;">
+  
+        We situated at the heart of Newark , always ready to get you ready for the week end
+  
+      </p>
+    </div>
+
+
+    <div style="padding: 1em;">
+      <h1 style="font-weight: 800; border: 5px solid white;
+      width: 2em;
+      text-align: center;">3</h1>
+      <h2 style="font-weight: 800;">Advanced Booking</h2>
+      <p style="width:20em; font-weight: 700;">
+  
+        You can schedule your booking at your convenient time through our online booking portal.
+        
+      </p>
+    </div>    
+
+
+
+    <div style="padding: 1em;">
+      <h1 style="font-weight: 800; border: 5px solid white;
+      width: 2em;
+      text-align: center;">4</h1>
+      <h2 style="font-weight: 800;">Affordable Prices</h2>
+      <p style="width:20em; font-weight: 700;">
+  
+        We have by far one of the most reasonable price, with even better results, you can look way much elegant for less.
+        
+      </p>
+    </div>    
+
+
+    <div style="padding: 1em;">
+      <h1 style="font-weight: 800; border: 5px solid white;
+      width: 2em;
+      text-align: center;">5</h1>
+      <h2 style="font-weight: 800;">Free Consultation</h2>
+      <p style="width:20em ; font-weight: 700;">
+  
+        Not sure which style suits you best or want to make a recommendation for someone? we have got you covered reach out to us for  a free consultation.
+        
+      </p>
+    </div>    
+
+
+    <div style="padding: 1em;">
+      <h1 style="font-weight: 800; border: 5px solid white;
+      width: 2em;
+      text-align: center;">6</h1>
+      <h2 style="font-weight: 800;">Close Neat Staff</h2>
+      <p style="width:20em; font-weight: 700;">
+  
+        With years of experiences and continuing education, our dedicated staff is ready to serve your beauty needs. We’re happy to help you decide the best look.
+        
+      </p>
+    </div>    
+
+  </div>
+
   
 
 
@@ -265,7 +352,42 @@
 
     <p id="address"><img src={% static "images/icons8-address-48.png" %}>:941 Bergan street Newark New Jersey 07112</p>
 
-      <a id="IG-logo-footer" target="_blank" href="https://www.instagram.com/ganiyathairstylistt/"><img id="instagram" src="{% static 'images/icons8-instagram-96(1).png' %}" alt=""></a>
+    <div id="Quick" style= "margin: auto;">
+
+    <h3 style= "background-color: #3d243c; color: white; font-weight: 800; width: 7em;
+    border: 1px solid black;
+    margin: auto;">Quick Links</h3>
+    
+    <a id="footer-book" target="_blank" href="https://ganiyatafricanbraids.setmore.com?source=easyshare">Book</a><br>
+
+    <a id="footer-book" href="{% url "booking:service" %}">Services</a><br>
+
+    <a id="footer-book" href="{% url "booking:aboutus" %}">About Us</a><br>
+
+    <a id="footer-book" href="{% url "booking:policy" %}">Policy</a><br>
+
+    </div>
+
+
+    <div id="sorted" style= "margin: auto;">
+
+      <h3 style= "background-color: #3d243c; color: white; font-weight: 800; width: 7em;
+      border: 1px solid black;
+      margin: auto;">Most Sorted</h3>
+      
+      <a id="footer-book" target="_blank" href="https://booking.setmore.com/scheduleappointment/3c4abe86-34f3-4393-ba04-498a77981ddb/services/cd5677ce-9f72-4d57-b985-db54bd155ed8?source=easyshare">Knotless</a><br>
+  
+      <a id="footer-book" target="_blank" href="https://booking.setmore.com/scheduleappointment/3c4abe86-34f3-4393-ba04-498a77981ddb/services/3c31b326-dcfa-45da-9ffa-cd0c4ee857e1?source=easyshare">Twist</a><br>
+  
+      <a id="footer-book" target="_blank" href="https://booking.setmore.com/scheduleappointment/3c4abe86-34f3-4393-ba04-498a77981ddb/services/623039c0-fe40-44b7-9591-da1dd140c9ac?source=easyshare">Cornrows</a><br>
+  
+      <a id="footer-book" target="_blank" href="https://booking.setmore.com/scheduleappointment/3c4abe86-34f3-4393-ba04-498a77981ddb/services/8a3a8e0e-900e-4afa-8519-a5575fd6197a?source=easyshare">Ex-small Knotless</a><br>
+
+      <a id="footer-book" target="_blank" href="https://booking.setmore.com/scheduleappointment/3c4abe86-34f3-4393-ba04-498a77981ddb/services/d5029feb-b23e-4f9b-bb4d-5fbb56246ade?source=easyshare">Goddess Braids</a><br>
+  
+      </div>
+
+    <a id="IG-logo-footer" target="_blank" href="https://www.instagram.com/ganiyathairstylistt/"><img id="instagram" src="{% static 'images/icons8-instagram-96(1).png' %}" alt=""></a>
 
       
 

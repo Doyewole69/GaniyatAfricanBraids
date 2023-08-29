@@ -34,15 +34,15 @@ def contact(request):
         return redirect('booking/contact')
     return render(request,'contact.html')
 
-def thankyou(request):
-    return render(request,'Thankyou.html' )
+def policy(request):
+    return render(request,'policy.html' )
 
 
 def services(request):
     return render(request,'service.html')
 
-def extrasmallknotless(request):
-    return render(request,'extrasmallknotless.html')
+def aboutus(request):
+    return render(request,'aboutus.html')
 
 def appointment(request):
     if request.method=='POST':

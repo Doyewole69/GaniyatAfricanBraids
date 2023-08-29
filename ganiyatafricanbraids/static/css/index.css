@@ -1,5 +1,6 @@
 body {
     background-color: #fff5f5;
+    font-family: poppins;
 }
 
 
@@ -11,10 +12,6 @@ body {
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
-}
-
-body {
-    font-family: poppins;
 }
 
 a#logoa {
@@ -374,20 +371,29 @@ footer {
     justify-content: space-around;
     position: relative;
     top: 1em;
+    padding: 5em;
 }
 
 p#address {
     color: white;
     position: relative;
     top: 1em;
+    width: 17em;
+    text-align: right;
 }
 
-p#copyright {
+a#footer-book {
+    color: white;
+    position: relative;
+    font-size: 20px;
+}
+
+p#Copyright {
     color: white;
     text-align: center;
     position: relative;
     top: 2em;
-    left: 20em;
+    margin: auto;
 }
 
 
@@ -477,6 +483,186 @@ button#serviceb {
     border: antiquewhite;
     font-weight: 600;
     color: white;
+}
+
+
+/* ABOUT US */
+
+div#about-flexbox1 {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 5em;
+    flex-wrap: wrap;
+}
+
+div#about-words1 {
+    flex: 50%;
+    position: relative;
+    left: 8em;
+}
+
+div#about-img1 {
+    flex: 50%;
+    position: relative;
+    left: 10em;
+}
+
+div#about-flexbox2 {
+    flex-direction: row-reverse;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 5em;
+    flex-wrap: wrap;
+}
+
+div#about-words2 {
+    flex: 50%;
+    position: relative;
+    left: 5em;
+}
+
+div#about-img2 {
+    flex: 50%;
+    position: relative;
+    left: 12em;
+}
+
+p#aboutusp {
+    width: 34em;
+}
+
+p#aboutusp2 {
+    width: 30em;
+}
+
+img#aboutusimg {
+    width: 50%;
+    border-radius: 12em;
+}
+
+img#aboutusimg2 {
+    width: 50%;
+    border-radius: 12em;
+}
+
+@media (max-width: 858px) {
+    div#about-flexbox1 {
+        flex-direction: column;
+    }
+    div#about-words1 {
+        flex: 50%;
+        position: relative;
+        left: -1.3em;
+        right: 1em;
+    }
+    div#about-img1 {
+        flex: 50%;
+        position: relative;
+        left: -1em;
+        top: 5em;
+    }
+    p#aboutusp {
+        width: 20em;
+    }
+    img#aboutusimg {
+        width: 100%;
+        border-radius: 12em;
+    }
+    div#about-flexbox2 {
+        flex-direction: column;
+    }
+    div#about-words2 {
+        flex: 50%;
+        position: relative;
+        left: -1.3em;
+    }
+    div#about-img2 {
+        flex: 50%;
+        position: relative;
+        left: -1em;
+        top: 5em;
+    }
+    p#aboutusp2 {
+        width: 20em;
+    }
+    img#aboutusimg2 {
+        width: 100%;
+        border-radius: 12em;
+        top: 1em;
+    }
+}
+
+
+/* EXPERTISE*/
+
+div#experties {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 6em;
+    background-color: #3d243c;
+    color: white;
+}
+
+
+/* FAQ*/
+
+section#accordion {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2em;
+    height: 80em;
+}
+
+div#faq {
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    ;
+}
+
+.accordion {
+    background-color: transparent;
+    color: black;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: 1px solid black;
+    text-align: left;
+    outline: none;
+    font-size: 20px;
+    transition: 0.4s;
+}
+
+.active,
+.accordion:hover {
+    background-color: transparent;
+    color: #777;
+}
+
+.accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: transparent;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
 }
 
 
@@ -716,6 +902,7 @@ input[type=checkbox]:checked+label#contactl {
     }
     #footer-flex {
         flex-direction: column;
+        justify-content: center;
     }
     p#footer-flex {
         display: flex;
@@ -734,7 +921,22 @@ input[type=checkbox]:checked+label#contactl {
     }
     a#IG-logo-footer {
         margin: auto;
-        top: 2em;
+        top: 8em;
         position: relative;
+    }
+    div#sorted {
+        position: relative;
+        top: 6em;
+    }
+    div#Quick {
+        position: relative;
+        top: 4em;
+    }
+    p#Copyright {
+        color: white;
+        text-align: center;
+        position: relative;
+        top: 4em;
+        margin: auto;
     }
 }

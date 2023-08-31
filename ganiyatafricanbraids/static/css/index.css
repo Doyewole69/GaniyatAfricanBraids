@@ -1,6 +1,11 @@
 body {
     background-color: #fff5f5;
     font-family: poppins;
+    background-image: url("/static/images/bgimg.jpg");
+    background-position: center;
+    background-repeat: space;
+    background-size: cover;
+    height: 100%;
 }
 
 
@@ -266,7 +271,13 @@ div#fb3images {
 .img7,
 .img8,
 .img9,
-.img10 {
+.img10,
+.img11,
+.img12,
+.img13,
+.img14,
+.img15,
+.img16 {
     width: 15em;
     border-radius: 12em;
     cursor: pointer;
